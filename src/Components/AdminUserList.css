@@ -1,0 +1,104 @@
+/* Contenedor principal de la lista de usuarios */
+.admin-user-list {
+  background-color: #fff;
+  border-radius: 0.5rem; /* Equivalente a rounded-lg */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -5px rgba(0, 0, 0, 0.08); /* Equivalente a shadow-lg */
+  padding: 1.5rem; /* Equivalente a p-6 */
+}
+
+/* Título de la sección */
+.user-list-title {
+  font-size: 1.25rem; /* Equivalente a text-xl */
+  font-weight: bold; /* Equivalente a font-bold */
+  margin-bottom: 1rem; /* Equivalente a mb-4 */
+}
+
+/* Contenedor de la búsqueda */
+.search-container {
+  margin-bottom: 1rem; /* Equivalente a mb-4 */
+}
+
+/* Input de búsqueda */
+.search-input {
+  width: 100%; /* Equivalente a w-full */
+  padding: 0.5rem 1rem; /* Equivalente a px-4 py-2 */
+  border: 1px solid #cbd5e0; /* Equivalente a border */
+  border-radius: 0.25rem; /* Equivalente a rounded-lg */
+  box-sizing: border-box;
+}
+
+/* Contenedor de la tabla (para el scroll horizontal en pantallas pequeñas) */
+.table-responsive {
+  overflow-x: auto; /* Equivalente a overflow-x-auto */
+}
+
+/* Tabla de usuarios */
+.user-table {
+  width: 100%; /* Equivalente a w-full */
+  border-collapse: collapse; /* Evita bordes dobles entre celdas */
+}
+
+/* Encabezado de la tabla */
+.user-table thead tr {
+  border-bottom: 1px solid #e0e0e0; /* Equivalente a border-b */
+}
+
+.user-table th {
+  text-align: left; /* Equivalente a text-left */
+  padding: 0.5rem 1rem; /* Equivalente a py-2 px-4 */
+  font-weight: bold;
+}
+
+/* Filas del cuerpo de la tabla */
+.user-table tbody tr {
+  border-bottom: 1px solid #e0e0e0; /* Equivalente a border-b */
+  transition: background-color 0.15s ease-in-out; /* Equivalente a hover:bg-gray-50 */
+}
+
+.user-table tbody tr:hover {
+  background-color: #f7f7f7; /* Equivalente a hover:bg-gray-50 */
+}
+
+.user-table td {
+  padding: 0.5rem 1rem; /* Equivalente a py-2 px-4 */
+}
+
+/* Estado del usuario (Activo/Inactivo) */
+.status-badge {
+  padding: 0.25rem 0.5rem; /* Equivalente a px-2 py-1 */
+  border-radius: 9999px; /* Equivalente a rounded-full */
+  font-size: 0.75rem; /* Equivalente a text-xs */
+}
+
+.status-active {
+  background-color: #e6ffe6; /* Equivalente a bg-green-100 */
+  color: #155724; /* Equivalente a text-green-800 */
+}
+
+.status-inactive {
+  background-color: #f8d7da; /* Equivalente a bg-red-100 */
+  color: #721c24; /* Equivalente a text-red-800 */
+}
+
+/* Botón de desactivar */
+.deactivate-button {
+  padding: 0.75rem 1rem; /* Ajuste para un tamaño similar a py-1 px-3 con font-sm */
+  border-radius: 0.25rem; /* Equivalente a rounded-lg */
+  font-size: 0.875rem; /* Equivalente a text-sm */
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.deactivate-active {
+  background-color: #dc2626; /* Equivalente a bg-red-500 */
+  color: #fff; /* Equivalente a text-white */
+}
+
+.deactivate-active:hover {
+  background-color: #b91c1c; /* Equivalente a hover:bg-red-600 */
+}
+
+.deactivate-inactive {
+  background-color: #e5e7eb; /* Equivalente a bg-gray-300 */
+  color: #4b5563; /* Equivalente a text-gray-600 */
+  cursor: not-allowed; /* Equivalente a cursor-not-allowed */
+}

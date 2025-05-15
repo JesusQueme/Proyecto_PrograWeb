@@ -1,0 +1,102 @@
+/* Contenedor principal del formulario */
+.admin-room-form {
+  background-color: #fff;
+  border-radius: 0.5rem; /* Equivalente a rounded-lg */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -5px rgba(0, 0, 0, 0.08); /* Equivalente a shadow-lg */
+  padding: 1.5rem; /* Equivalente a p-6 */
+  max-width: 50rem; /* Equivalente a max-w-2xl */
+  margin-left: auto; /* Equivalente a mx-auto */
+  margin-right: auto; /* Equivalente a mx-auto */
+}
+
+/* Título del formulario */
+.form-title {
+  font-size: 1.25rem; /* Equivalente a text-xl */
+  font-weight: bold; /* Equivalente a font-bold */
+  margin-bottom: 1rem; /* Equivalente a mb-4 */
+}
+
+/* Contenedor de los campos en dos columnas en pantallas medianas o grandes */
+.grid-cols-2-md {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna por defecto */
+  gap: 1rem; /* Equivalente a gap-4 */
+  margin-bottom: 1rem; /* Equivalente a mb-4 */
+}
+
+@media (min-width: 768px) { /* Equivalente al breakpoint 'md' */
+  .grid-cols-2-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Contenedor del campo */
+.form-group {
+  margin-bottom: 1rem; /* Equivalente a mb-4 */
+}
+
+/* Etiqueta del campo */
+.form-label {
+  display: block; /* Equivalente a block */
+  color: #4a5568; /* Equivalente a text-gray-700 */
+  margin-bottom: 0.5rem; /* Equivalente a mb-2 */
+}
+
+/* Campo de entrada de texto, URL o número */
+.form-input {
+  width: 100%; /* Equivalente a w-full */
+  padding: 0.5rem 1rem; /* Equivalente a px-4 py-2 */
+  border: 1px solid #cbd5e0; /* Equivalente a border */
+  border-radius: 0.25rem; /* Equivalente a rounded-lg */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Contenedor de los campos de filas y columnas */
+.grid-cols-2-gap-6 {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna por defecto */
+  gap: 1.5rem; /* Equivalente a gap-6 */
+  margin-bottom: 1.5rem; /* Equivalente a mb-6 */
+}
+
+@media (min-width: 768px) { /* Equivalente al breakpoint 'md' */
+  .grid-cols-2-gap-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Contenedor de los botones de acción */
+.form-actions {
+  display: flex;
+  justify-content: flex-end; /* Equivalente a justify-end */
+  gap: 0.75rem; /* Equivalente a space-x-3 */
+}
+
+.form-actions > button {
+  padding: 0.5rem 1rem; /* Equivalente a px-4 py-2 */
+  border-radius: 0.25rem; /* Equivalente a rounded-lg */
+  font-weight: 500; /* Semibold o similar */
+}
+
+/* Botón de cancelar */
+.button-cancel {
+  border: 1px solid #cbd5e0; /* Equivalente a border */
+  background-color: transparent;
+  color: #4a5568;
+  transition: background-color 0.15s ease-in-out; /* Equivalente a transition-colors */
+}
+
+.button-cancel:hover {
+  background-color: #edf2f7; /* Equivalente a hover:bg-gray-100 */
+}
+
+/* Botón de crear/actualizar */
+.button-submit {
+  background-color: #2b6cb0; /* Equivalente a bg-blue-600 */
+  color: #fff; /* Equivalente a text-white */
+  transition: background-color 0.15s ease-in-out; /* Equivalente a transition-colors */
+}
+
+.button-submit:hover {
+  background-color: #2c5282; /* Equivalente a hover:bg-blue-700 */
+}

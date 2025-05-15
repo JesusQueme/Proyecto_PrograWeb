@@ -1,0 +1,246 @@
+/* AuthRegisterForm.css */
+
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a202c; /* bg-gray-900 */
+}
+
+.register-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.register-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* bg-black bg-opacity-60 */
+  z-index: 1;
+}
+
+.decorator {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(40px);
+  z-index: 2;
+}
+
+.decorator-blue {
+  top: 5rem; /* top-20 */
+  left: 5rem; /* left-20 */
+  width: 8rem; /* w-32 */
+  height: 8rem; /* h-32 */
+  background-color: #64b5f6; /* bg-blue-500 */
+}
+
+.decorator-purple {
+  bottom: 5rem; /* bottom-20 */
+  right: 10rem; /* right-40 (ajustado un poco) */
+  width: 10rem; /* w-40 */
+  height: 10rem; /* h-40 */
+  background-color: #a78bfa; /* bg-purple-500 */
+}
+
+.decorator-pink {
+  top: 33%; /* top-1/3 */
+  right: 25%; /* right-1/4 */
+  width: 6rem; /* w-24 */
+  height: 6rem; /* h-24 */
+  background-color: #f472b6; /* bg-pink-500 */
+  opacity: 0.15; /* opacity-15 */
+}
+
+.register-card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 28rem; /* max-w-md */
+  padding: 2.5rem; /* px-8 py-10 */
+  margin: 0 1rem; /* mx-4 */
+  background-color: rgba(255, 255, 255, 0.1); /* bg-white bg-opacity-10 */
+  backdrop-filter: blur(10px); /* backdrop-filter backdrop-blur-lg */
+  border-radius: 1rem; /* rounded-2xl */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* border border-white border-opacity-20 */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.register-header h2 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+  color: white; /* text-white */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.register-header p {
+  color: #d1d5db; /* text-gray-300 */
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space-y-2 (implícito por el gap del form) */
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: medium;
+  color: #d1d5db; /* text-gray-300 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex; /* Añadimos flex para controlar mejor la alineación */
+  align-items: center; /* Alineamos verticalmente los elementos */
+}
+
+.input-wrapper svg {
+  position: absolute;
+  left: 0.75rem; /* pl-3 */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.25rem; /* h-5 */
+  width: 1.25rem; /* w-5 */
+  color: #9ca3af; /* text-gray-400 */
+  pointer-events: none;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding-left: 2.5rem; /* pl-10 */
+  padding-right: 1rem; /* pr-4 */
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem; /* py-3 */
+  background-color: rgba(255, 255, 255, 0.1); /* bg-white bg-opacity-10 */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* border border-white border-opacity-20 */
+  border-radius: 0.5rem; /* rounded-lg */
+  color: white; /* text-white */
+  font-size: 1rem; /* text-base (implícito) */
+  caret-color: white; /* Asegura que el cursor sea visible */
+}
+
+.register-form input::placeholder {
+  color: #9ca3af; /* placeholder-gray-400 */
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #64b5f6; /* focus:ring-blue-500 (aproximado como borde) */
+  box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.5); /* focus:ring-blue-500 (aproximado como sombra) */
+}
+
+.register-form button[type="submit"] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem; /* py-3 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+  border: none; /* border-transparent */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -5px rgba(0, 0, 0, 0.08); /* shadow-sm */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: medium;
+  color: white; /* text-white */
+  background-image: linear-gradient(to right, #64b5f6, #9575cd); /* bg-gradient-to-r from-blue-500 to-purple-600 */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1); /* Inicialmente no escalado */
+}
+
+.register-form button[type="submit"]:hover {
+  background-image: linear-gradient(to right, #42a5f5, #7e57c2); /* hover:from-blue-600 hover:to-purple-700 */
+  transform: scale(1.05); /* hover:scale-105 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* hover:shadow-md (aproximado) */
+}
+
+.register-form button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.5); /* focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 */
+}
+
+.register-footer {
+  margin-top: 1.5rem; /* mt-6 */
+  text-align: center;
+}
+
+.register-footer p {
+  font-size: 0.875rem; /* text-sm */
+  color: #d1d5db; /* text-gray-300 */
+}
+
+.register-footer button {
+  font-weight: medium;
+  color: #64b5f6; /* text-blue-400 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.register-footer button:hover {
+  color: #42a5f5; /* hover:text-blue-300 */
+  text-decoration: underline; /* Añadimos un subrayado al hacer hover */
+}
+
+.icon-container {
+  position: absolute;
+  left: 0.20rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.icon-container svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: #9ca3af;
+}
+
+.register-input {
+  width: 100%;
+  padding-left: 2.5rem; /* Espacio para el icono */
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  caret-color: white;
+}
+
+.register-input::placeholder {
+  color: #9ca3af;
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #64b5f6;
+  box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.5);
+}

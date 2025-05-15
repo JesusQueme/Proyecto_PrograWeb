@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AdminRoomForm.css'; // Importa el archivo CSS
 
 const AdminRoomForm = ({ room, onSubmit, onCancel }) => {
   const [formData, setFormData] = useState(room || {

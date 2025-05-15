@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AdminUserList.css'; // Importa el archivo CSS
 
 const AdminUserList = ({ users, onDeactivate }) => {
   const [searchTerm, setSearchTerm] = useState('');

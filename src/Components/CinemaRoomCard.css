@@ -1,0 +1,136 @@
+/* Contenedor principal de la tarjeta de la sala de cine */
+.cinema-room-card {
+  background-color: #fff;
+  border-radius: 0.75rem; /* Equivalente a rounded-2xl */
+  overflow: hidden; /* Equivalente a overflow-hidden */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -5px rgba(0, 0, 0, 0.08); /* Equivalente a shadow-lg */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Equivalente a hover:shadow-2xl transition-shadow duration-300 transform */
+  cursor: pointer;
+}
+
+.cinema-room-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* Equivalente a hover:shadow-2xl */
+  transform: translateY(-0.25rem); /* Equivalente a hover:-translate-y-1 */
+}
+
+/* Contenedor de la imagen de la película */
+.poster-container {
+  position: relative; /* Para el posicionamiento absoluto de los elementos dentro */
+  height: 14rem; /* Equivalente a h-56 */
+  overflow: hidden; /* Equivalente a overflow-hidden */
+}
+
+/* Imagen del póster */
+.poster-image {
+  width: 100%; /* Equivalente a w-full */
+  height: 100%; /* Equivalente a h-full */
+  object-fit: cover; /* Equivalente a object-cover */
+  transition: transform 0.5s ease-in-out; /* Equivalente a transition-transform duration-500 */
+}
+
+.poster-image:hover {
+  transform: scale(1.05); /* Equivalente a hover:scale-105 */
+}
+
+/* Gradiente oscuro en la parte inferior de la imagen */
+.poster-gradient {
+  position: absolute; /* Equivalente a absolute */
+  bottom: 0; /* Equivalente a bottom-0 */
+  left: 0; /* Equivalente a left-0 */
+  right: 0; /* Equivalente a right-0 */
+  background-image: linear-gradient(to top, #000, transparent); /* Equivalente a bg-gradient-to-t from-black to-transparent */
+  height: 5rem; /* Equivalente a h-20 */
+}
+
+/* Contenedor del título de la película */
+.movie-title-container {
+  position: absolute; /* Equivalente a absolute */
+  bottom: 0.75rem; /* Equivalente a bottom-3 */
+  left: 0.75rem; /* Equivalente a left-3 */
+  right: 0.75rem; /* Equivalente a right-3 */
+}
+
+/* Título de la película */
+.movie-title {
+  font-size: 1.25rem; /* Equivalente a text-xl */
+  font-weight: bold; /* Equivalente a font-bold */
+  color: #fff; /* Equivalente a text-white */
+  white-space: nowrap; /* Evita el salto de línea */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  text-overflow: ellipsis; /* Muestra "..." para indicar texto cortado */
+}
+
+/* Contenedor de la información de la sala */
+.room-info {
+  padding: 1.25rem; /* Equivalente a p-5 */
+}
+
+/* Contenedor de la información superior (nombre de la sala y asientos) */
+.top-info {
+  display: flex; /* Equivalente a flex */
+  justify-content: space-between; /* Equivalente a justify-between */
+  align-items: flex-start; /* Equivalente a items-start */
+  margin-bottom: 0.5rem; /* Equivalente a mb-2 */
+}
+
+/* Nombre de la sala (badge) */
+.room-name-badge {
+  font-size: 0.875rem; /* Equivalente a text-sm */
+  font-weight: 600; /* Equivalente a font-semibold */
+  color: #4f46e5; /* Equivalente a text-indigo-600 */
+  background-color: #e0e7ff; /* Equivalente a bg-indigo-50 */
+  padding: 0.25rem 0.5rem; /* Equivalente a px-2 py-1 */
+  border-radius: 9999px; /* Equivalente a rounded-full */
+}
+
+/* Información de los asientos */
+.seats-info {
+  font-size: 0.75rem; /* Equivalente a text-xs */
+  font-weight: 500; /* Equivalente a font-medium */
+  color: #71717a; /* Equivalente a text-gray-500 */
+  background-color: #f3f4f6; /* Equivalente a bg-gray-100 */
+  padding: 0.25rem 0.5rem; /* Equivalente a px-2 py-1 */
+  border-radius: 9999px; /* Equivalente a rounded-full */
+}
+
+/* Contenedor de la información inferior (rating y asientos disponibles) */
+.bottom-info {
+  display: flex; /* Equivalente a flex */
+  align-items: center; /* Equivalente a items-center */
+  justify-content: space-between; /* Equivalente a justify-between */
+}
+
+/* Contenedor del rating */
+.rating-container {
+  display: flex; /* Equivalente a flex */
+  align-items: center; /* Equivalente a items-center */
+}
+
+/* Icono de la estrella */
+.star-icon {
+  width: 1.25rem; /* Equivalente a w-5 */
+  height: 1.25rem; /* Equivalente a h-5 */
+  fill: #facc15; /* Equivalente a text-yellow-400 */
+}
+
+/* Valor del rating */
+.rating-value {
+  margin-left: 0.25rem; /* Equivalente a ml-1 */
+  font-size: 0.875rem; /* Equivalente a text-sm */
+  font-weight: 500; /* Equivalente a font-medium */
+  color: #4b5563; /* Equivalente a text-gray-600 */
+}
+
+/* Información de asientos disponibles */
+.available-seats {
+  font-size: 1.125rem; /* Equivalente a text-lg */
+  font-weight: bold; /* Equivalente a font-bold */
+  color: #111827; /* Equivalente a text-gray-900 */
+}
+
+/* Texto "disponibles" */
+.available-seats-text {
+  font-size: 0.875rem; /* Equivalente a text-sm */
+  font-weight: normal; /* Equivalente a font-normal */
+  color: #71717a; /* Equivalente a text-gray-500 */
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './CinemaRoomCard.css'; // Importa el archivo CSS
 
 const CinemaRoomCard = ({ room, onClick }) => {
   return (
