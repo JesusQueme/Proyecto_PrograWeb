@@ -1,19 +1,24 @@
 import React from 'react';
 import CinemaRoomCard from './CinemaRoomCard';
+import './CinemaRoomGrid.css'; // Importa el archivo CSS
 
 const CinemaRoomGrid = ({ rooms, onRoomSelect }) => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-6">Salas Disponibles</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {rooms.map(room => (
-          <CinemaRoomCard 
-            key={room.id} 
-            room={room} 
-            onClick={onRoomSelect}
-          />
-        ))}
-      </div>
+    <div className="cinema-room-grid"> {/* Contenedor principal */}
+      <h2 className="grid-title">Peliculas Disponibles</h2>
+      {rooms.length === 0 ? (
+        <p className="grid-empty-message">No hay salas disponibles en este momento.</p>
+      ) : (
+        <div className="room-grid"> {/* Contenedor de la cuadrícula de salas */}
+          {rooms.map(room => (
+            <CinemaRoomCard
+              key={room.id}
+              room={room}
+              onClick={onRoomSelect}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

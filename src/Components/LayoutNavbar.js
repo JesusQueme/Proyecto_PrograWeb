@@ -1,4 +1,5 @@
 import React from 'react';
+import './LayoutNavbar.css'; // Importa el archivo CSS
 
 const LayoutNavbar = ({ user, onLogout }) => {
   return (
