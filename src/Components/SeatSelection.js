@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SeatSelection.css';
 
 const SeatSelection = ({ rows, columns, reservedSeats, onSeatSelect }) => {
   const [selectedSeats, setSelectedSeats] = useState([]);

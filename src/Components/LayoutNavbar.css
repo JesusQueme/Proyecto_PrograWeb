@@ -7,7 +7,7 @@
 
 .text-white {
   /* Ya definido por Tailwind */
-  color: #fff;
+  color: #0e0e0e;
 }
 
 .p-4 {
@@ -134,7 +134,7 @@
 
 .bg-white {
   /* Ya definido por Tailwind */
-  background-color: #fff;
+  background-color: #0c0c0c;
 }
 
 .bg-opacity-20 {
